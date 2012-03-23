@@ -62,7 +62,7 @@ function execStatsRequest()
     if (userName().length > 0)
     {
         var Url = "http://habrahabr.ru/api/profile/" + userName() + "/";
-        log("User: " + userName + "\nURL: " + Url);
+        log("User: " + userName() + "\nURL: " + Url);
 
         xmlHttp = new XMLHttpRequest(); 
         xmlHttp.onreadystatechange = processStatsRequest;
@@ -95,7 +95,7 @@ function processStatsRequest()
             {
                 log("some error");
                 resetStats();
-                setLogin("<Error: user " + + " not found>");
+                setLogin("<" + userName() + " not found>");
                 return;
             }
             var login = xmlHttp.responseXML.getElementsByTagName("login")[0].firstChild.nodeValue;
@@ -127,6 +127,7 @@ function load()
     dashcode.setupParts();
     resetStats();
     var name = widget.preferenceForKey(widget.identifier + "-" + preferenceKey);
+    log("name from preferences: " + name);
     if (name != null)
         setUserName(name);
 }
@@ -144,8 +145,7 @@ function hide()
 
 function show()
 {
-    window.console.log("show");
-    startTimer(500);
+    startTimer(50);
 }
 
 function updateStats()
@@ -156,6 +156,12 @@ function updateStats()
         execStatsRequest();
     }
     startTimer(updateInterval);
+}
+
+function onLogoClicked()
+{
+    var websiteURL = "http://habrahabr.ru";
+    widget.openURL(websiteURL);
 }
 
 //-------------------------------------------------//
@@ -205,7 +211,7 @@ function showBack(event)
 //
 function showFront(event)
 {
-    startTimer(500);
+    startTimer(50);
     var front = document.getElementById("front");
     var back = document.getElementById("back");
 
@@ -226,4 +232,5 @@ if (window.widget) {
     widget.onhide = hide;
     widget.onshow = show;
     widget.onsync = sync;
+    //document.getElementById("logo").onclick = onLogoClicked;
 }

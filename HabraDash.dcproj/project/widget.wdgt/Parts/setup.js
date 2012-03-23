@@ -5,16 +5,18 @@
  code generator otherwise the changes will be lost.
  */
 var dashcodePartSpecs = {
-    "caption": { "text": "User name:", "view": "DC.Text" },
     "done": { "creationFunction": "CreateGlassButton", "onclick": "showFront", "text": "Done" },
     "info": { "backgroundStyle": "black", "creationFunction": "CreateInfoButton", "foregroundStyle": "white", "frontID": "front", "onclick": "showBack" },
     "karma": { "text": "0", "view": "DC.Text" },
+    "karmaCaption": { "text": "Karma:", "view": "DC.Text" },
+    "logo": { "view": "DC.ImageLayout" },
+    "nameEditCaption": { "text": "Habrauser:", "view": "DC.Text" },
     "position": { "text": "0", "view": "DC.Text" },
+    "positionCaption": { "text": "Position:", "view": "DC.Text" },
     "rating": { "text": "0", "view": "DC.Text" },
-    "text": { "text": "User: ", "view": "DC.Text" },
-    "text1": { "text": "Karma:", "view": "DC.Text" },
-    "text2": { "text": "Rating:", "view": "DC.Text" },
-    "text3": { "text": "Position:", "view": "DC.Text" },
+    "ratingCaption": { "text": "Rating:", "view": "DC.Text" },
+    "userCaption": { "text": "User: ", "view": "DC.Text" },
     "userName": { "text": "<none>", "view": "DC.Text" }
 };
+
 

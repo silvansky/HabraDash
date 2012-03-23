@@ -36,9 +36,9 @@ body {
     display: block;
     top: 0px;
     left: 0px;
-    bottom: 0px;
     right: 0px;
     width: auto;
+    bottom: 0px;
     height: auto;
 }
 
@@ -55,12 +55,12 @@ body {
     color: black;
     font-family: HelveticaNeue;
     font-size: 10pt;
-    left: 128px;
-    top: 35px;
-    width: 110px;
+    left: 32px;
+    width: 125px;
+    top: 69px;
 }
 
-#caption {
+#nameEditCaption {
     font-size: 13px;
     font-family: 'Lucida Grande', Arial, sans-serif;
     text-overflow: ellipsis;
@@ -69,17 +69,17 @@ body {
     margin-top: 0px;
     border-color: rgb(255, 255, 255);
     color: rgb(255, 255, 255);
-    top: 37px;
-    left: 35px;
+    left: 32px;
+    top: 38px;
     width: auto;
     height: auto;
 }
 
-.selected #caption {
+.selected #nameEditCaption {
     color: white;
 }
 
-#text {
+#userCaption {
     font-size: 13px;
     font-family: 'Lucida Grande', Arial, sans-serif;
     text-overflow: ellipsis;
@@ -92,11 +92,11 @@ body {
     height: auto;
 }
 
-.selected #text {
+.selected #userCaption {
     color: white;
 }
 
-#text1 {
+#karmaCaption {
     font-size: 13px;
     font-family: 'Lucida Grande', Arial, sans-serif;
     text-overflow: ellipsis;
@@ -109,11 +109,11 @@ body {
     height: auto;
 }
 
-.selected #text1 {
+.selected #karmaCaption {
     color: white;
 }
 
-#text2 {
+#ratingCaption {
     font-size: 13px;
     font-family: 'Lucida Grande', Arial, sans-serif;
     text-overflow: ellipsis;
@@ -126,11 +126,11 @@ body {
     height: auto;
 }
 
-.selected #text2 {
+.selected #ratingCaption {
     color: white;
 }
 
-#text3 {
+#positionCaption {
     font-size: 13px;
     font-family: 'Lucida Grande', Arial, sans-serif;
     text-overflow: ellipsis;
@@ -143,7 +143,7 @@ body {
     top: 93px;
 }
 
-.selected #text3 {
+.selected #positionCaption {
     color: white;
 }
 
@@ -206,11 +206,43 @@ body {
     position: absolute;
     margin-top: 0px;
     left: 87px;
+    top: 25px;
+    right: 22px;
     width: auto;
     height: auto;
-    top: 25px;
+    text-shadow: none;
+    white-space: nowrap;
 }
 
 .selected #userName {
     color: white;
+}
+
+#logo {
+    position: absolute;
+    right: auto;
+    bottom: auto;
+    margin-top: 0px;
+    top: 13px;
+    left: 169px;
+    width: 85px;
+    height: 79px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    opacity: 1;
+}
+
+#inner_image {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    top: 0px;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
 }
