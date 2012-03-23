@@ -15,7 +15,6 @@ var dashcodePartSpecs = {
     "positionCaption": { "text": "Position:", "view": "DC.Text" },
     "rating": { "text": "0", "view": "DC.Text" },
     "ratingCaption": { "text": "Rating:", "view": "DC.Text" },
-    "userCaption": { "text": "User: ", "view": "DC.Text" },
     "userName": { "text": "<none>", "view": "DC.Text" }
 };
 

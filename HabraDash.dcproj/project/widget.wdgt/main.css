@@ -79,34 +79,18 @@ body {
     color: white;
 }
 
-#userCaption {
-    font-size: 13px;
-    font-family: 'Lucida Grande', Arial, sans-serif;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    position: absolute;
-    margin-top: 0px;
-    top: 25px;
-    left: 27px;
-    width: auto;
-    height: auto;
-}
-
-.selected #userCaption {
-    color: white;
-}
-
 #karmaCaption {
-    font-size: 13px;
     font-family: 'Lucida Grande', Arial, sans-serif;
     text-overflow: ellipsis;
     overflow: hidden;
     position: absolute;
     margin-top: 0px;
-    top: 48px;
-    left: 27px;
+    color: rgb(102, 204, 102);
+    top: 38px;
+    left: 56px;
     width: auto;
     height: auto;
+    font-size: 10px;
 }
 
 .selected #karmaCaption {
@@ -114,16 +98,17 @@ body {
 }
 
 #ratingCaption {
-    font-size: 13px;
     font-family: 'Lucida Grande', Arial, sans-serif;
     text-overflow: ellipsis;
     overflow: hidden;
     position: absolute;
     margin-top: 0px;
-    left: 27px;
-    top: 72px;
+    color: rgb(204, 102, 204);
+    left: 165px;
+    top: 38px;
     width: auto;
     height: auto;
+    font-size: 10px;
 }
 
 .selected #ratingCaption {
@@ -137,10 +122,11 @@ body {
     overflow: hidden;
     position: absolute;
     margin-top: 0px;
-    left: 27px;
+    color: rgb(102, 102, 102);
+    top: 100px;
+    left: 135px;
     width: auto;
     height: auto;
-    top: 93px;
 }
 
 .selected #positionCaption {
@@ -154,10 +140,11 @@ body {
     overflow: hidden;
     position: absolute;
     margin-top: 0px;
-    left: 87px;
+    color: rgb(102, 102, 102);
+    left: 207px;
+    top: 100px;
     width: auto;
     height: auto;
-    top: 93px;
 }
 
 .selected #position {
@@ -165,16 +152,18 @@ body {
 }
 
 #rating {
-    font-size: 13px;
-    font-family: 'Lucida Grande', Arial, sans-serif;
     text-overflow: ellipsis;
     overflow: hidden;
     position: absolute;
     margin-top: 0px;
+    color: rgb(204, 102, 204);
+    font-weight: bold;
+    font-family: 'Lucida Grande';
+    top: 55px;
+    left: 182px;
     width: auto;
     height: auto;
-    top: 72px;
-    left: 87px;
+    font-size: 36px;
 }
 
 .selected #rating {
@@ -182,16 +171,18 @@ body {
 }
 
 #karma {
-    font-size: 13px;
-    font-family: 'Lucida Grande', Arial, sans-serif;
     text-overflow: ellipsis;
     overflow: hidden;
     position: absolute;
     margin-top: 0px;
-    left: 87px;
+    color: rgb(102, 204, 102);
+    font-weight: bold;
+    font-family: 'Lucida Grande';
+    left: 73px;
+    top: 55px;
     width: auto;
     height: auto;
-    top: 48px;
+    font-size: 36px;
 }
 
 .selected #karma {
@@ -199,19 +190,21 @@ body {
 }
 
 #userName {
-    font-size: 13px;
-    font-family: 'Lucida Grande', Arial, sans-serif;
     text-overflow: ellipsis;
     overflow: hidden;
     position: absolute;
     margin-top: 0px;
-    left: 87px;
-    top: 25px;
-    right: 22px;
-    width: auto;
-    height: auto;
     text-shadow: none;
     white-space: nowrap;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Lucida Grande';
+    left: 27px;
+    top: 21px;
+    right: 26px;
+    width: auto;
+    height: auto;
+    text-align: center;
 }
 
 .selected #userName {
