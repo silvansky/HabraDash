@@ -5,11 +5,12 @@
  code generator otherwise the changes will be lost.
  */
 var localizedStrings = {
-    "Done": "Done",
-    "Habrauser:": "Habrauser:",
-    "Karma:": "Karma:",
-    "Position:": "Position:",
-    "Rating:": "Rating:"
+    "Done": "Готово",
+    "Habrauser:": "Хабраюзер:",
+    "Karma:": "Карма:",
+    "Position:": "Позиция:",
+    "Rating:": "Рейтинг:"
 };
+
 
 

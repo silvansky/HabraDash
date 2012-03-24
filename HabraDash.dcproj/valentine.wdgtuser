@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CYLastWindowPosition</key>
-	<string>{415, 254}</string>
+	<string>{507, 216}</string>
 	<key>ContentSplitViewGeometry</key>
 	<dict>
 		<key>ContentSplitViewConfig</key>
@@ -14,8 +14,8 @@
 		<integer>0</integer>
 		<key>sizes</key>
 		<array>
-			<string>{{0, 0}, {1035, 181}}</string>
-			<string>{{0, 191}, {1035, 481}}</string>
+			<string>{{0, 0}, {1035, 205}}</string>
+			<string>{{0, 215}, {1035, 457}}</string>
 		</array>
 	</dict>
 	<key>ContentViewType</key>
@@ -79,13 +79,11 @@
 		<array>
 			<array>
 				<integer>0</integer>
-				<integer>0</integer>
-				<integer>3</integer>
 			</array>
 		</array>
 		<key>Visible StackLayout Views</key>
 		<array>
-			<string>front</string>
+			<string>back</string>
 		</array>
 	</dict>
 </dict>

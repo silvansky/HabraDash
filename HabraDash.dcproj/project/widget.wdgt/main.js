@@ -49,6 +49,22 @@ function setUserName(name)
 }
 
 //-------------------------------------------------//
+function loadPrefs()
+{
+    var name = widget.preferenceForKey(widget.identifier + "-" + preferenceKey);
+    log(widget.identifier + "-" + preferenceKey);
+    log("name from preferences: " + name);
+    if (name != null)
+        setUserName(name);
+
+}
+
+function savePrefs()
+{
+    widget.setPreferenceForKey(userName(), widget.identifier + "-" + preferenceKey);
+}
+
+//-------------------------------------------------//
 function resetStats()
 {
     setLogin("<none>");
@@ -126,25 +142,24 @@ function load()
 {
     dashcode.setupParts();
     resetStats();
-    var name = widget.preferenceForKey(widget.identifier + "-" + preferenceKey);
-    log("name from preferences: " + name);
-    if (name != null)
-        setUserName(name);
+    loadPrefs();
 }
 
 function remove()
 {
-    widget.setPreferenceForKey(userName(), widget.identifier + "-" + preferenceKey);
     stopTimer();
+    savePrefs();
 }
 
 function hide()
 {
     stopTimer();
+    savePrefs();
 }
 
 function show()
 {
+    loadPrefs();
     startTimer(50);
 }
 

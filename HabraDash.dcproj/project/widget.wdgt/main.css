@@ -33,12 +33,11 @@ body {
 
 #backImg {
     position: absolute;
-    display: block;
     top: 0px;
     left: 0px;
     right: 0px;
-    width: auto;
     bottom: 0px;
+    width: auto;
     height: auto;
 }
 
@@ -56,8 +55,8 @@ body {
     font-family: HelveticaNeue;
     font-size: 10pt;
     left: 32px;
-    width: 125px;
     top: 69px;
+    width: 159px;
 }
 
 #nameEditCaption {
@@ -104,11 +103,11 @@ body {
     position: absolute;
     margin-top: 0px;
     color: rgb(204, 102, 204);
-    left: 165px;
     top: 38px;
+    font-size: 10px;
+    left: 211px;
     width: auto;
     height: auto;
-    font-size: 10px;
 }
 
 .selected #ratingCaption {
@@ -123,8 +122,8 @@ body {
     position: absolute;
     margin-top: 0px;
     color: rgb(102, 102, 102);
-    top: 100px;
-    left: 135px;
+    top: 103px;
+    left: 24px;
     width: auto;
     height: auto;
 }
@@ -141,8 +140,8 @@ body {
     position: absolute;
     margin-top: 0px;
     color: rgb(102, 102, 102);
-    left: 207px;
-    top: 100px;
+    top: 103px;
+    left: 89px;
     width: auto;
     height: auto;
 }
@@ -152,18 +151,19 @@ body {
 }
 
 #rating {
-    text-overflow: ellipsis;
     overflow: hidden;
     position: absolute;
     margin-top: 0px;
     color: rgb(204, 102, 204);
     font-weight: bold;
     font-family: 'Lucida Grande';
+    font-size: 36px;
+    text-align: center;
+    left: 138px;
     top: 55px;
-    left: 182px;
+    right: 19px;
     width: auto;
     height: auto;
-    font-size: 36px;
 }
 
 .selected #rating {
@@ -171,18 +171,19 @@ body {
 }
 
 #karma {
-    text-overflow: ellipsis;
     overflow: hidden;
     position: absolute;
     margin-top: 0px;
     color: rgb(102, 204, 102);
     font-weight: bold;
     font-family: 'Lucida Grande';
-    left: 73px;
     top: 55px;
+    font-size: 36px;
+    text-align: center;
+    left: 12px;
+    right: 200px;
     width: auto;
     height: auto;
-    font-size: 36px;
 }
 
 .selected #karma {
@@ -200,11 +201,11 @@ body {
     font-weight: bold;
     font-family: 'Lucida Grande';
     left: 27px;
-    top: 21px;
+    text-align: center;
+    top: 18px;
     right: 26px;
     width: auto;
     height: auto;
-    text-align: center;
 }
 
 .selected #userName {
@@ -216,8 +217,6 @@ body {
     right: auto;
     bottom: auto;
     margin-top: 0px;
-    top: 13px;
-    left: 169px;
     width: 85px;
     height: 79px;
     border-top-left-radius: 0px;
@@ -225,6 +224,8 @@ body {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     opacity: 1;
+    top: 13px;
+    left: 215px;
 }
 
 #inner_image {

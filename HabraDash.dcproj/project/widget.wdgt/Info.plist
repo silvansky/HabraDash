@@ -9,7 +9,7 @@
 	<key>CFBundleDisplayName</key>
 	<string>Untitled</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.valentine.widget.Untitled</string>
+	<string>com.silvansky.widget.HabraDash</string>
 	<key>CFBundleName</key>
 	<string>Untitled</string>
 	<key>CFBundleShortVersionString</key>
@@ -21,10 +21,10 @@
 	<key>CloseBoxInsetY</key>
 	<integer>15</integer>
 	<key>Height</key>
-	<integer>134</integer>
+	<integer>131</integer>
 	<key>MainHTML</key>
 	<string>main.html</string>
 	<key>Width</key>
-	<integer>279</integer>
+	<integer>337</integer>
 </dict>
 </plist>
