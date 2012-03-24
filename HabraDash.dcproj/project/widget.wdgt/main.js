@@ -1,11 +1,11 @@
 // globals
 var updateTimer;
 var xmlHttp = null;
-var updateInterval = 5000;
+var updateInterval = 60*1000;
 var preferenceKey = "habraUserName";
 
 // set true to enable debug output
-var debug = true;
+var debug = false;
 
 //-------------------------------------------------//
 function log(message)
@@ -100,16 +100,14 @@ function processStatsRequest()
         if (xmlHttp.responseXML == null)
         {
             resetStats();
-            //log(xmlHttp.responseText);
         }
         else
         {
             log(xmlHttp.responseText);
             var error = xmlHttp.responseXML.getElementsByTagName("error")[0];
-            log("Error: " + error);
             if (error != null)
             {
-                log("some error");
+                log("Some error occured!");
                 resetStats();
                 setLogin("<" + userName() + " not found>");
                 return;
@@ -135,6 +133,23 @@ function startTimer(msec)
 function stopTimer()
 {
     clearTimeout(updateTimer);
+}
+
+function updateStats()
+{
+    var online = window.navigator.onLine;
+    if (online)
+    {
+        execStatsRequest();
+    }
+    startTimer(updateInterval);
+}
+
+//-------------------------------------------------//
+function onLogoClicked()
+{
+    var websiteURL = "http://habrahabr.ru";
+    widget.openURL(websiteURL);
 }
 
 //-------------------------------------------------//
@@ -163,43 +178,12 @@ function show()
     startTimer(50);
 }
 
-function updateStats()
-{
-    var online = window.navigator.onLine;
-    if (online)
-    {
-        execStatsRequest();
-    }
-    startTimer(updateInterval);
-}
-
-function onLogoClicked()
-{
-    var websiteURL = "http://habrahabr.ru";
-    widget.openURL(websiteURL);
-}
-
 //-------------------------------------------------//
-//
-// Function: sync()
-// Called when the widget has been synchronized with .Mac
-//
 function sync()
 {
-    // Retrieve any preference values that you need to be synchronized here
-    // Use this for an instance key's value:
-    // instancePreferenceValue = widget.preferenceForKey(null, dashcode.createInstancePreferenceKey("your-key"));
-    //
-    // Or this for global key's value:
-    // globalPreferenceValue = widget.preferenceForKey(null, "your-key");
+    loadPrefs();
 }
 
-//
-// Function: showBack(event)
-// Called when the info button is clicked to show the back of the widget
-//
-// event: onClick event from the info button
-//
 function showBack(event)
 {
     stopTimer();
@@ -218,12 +202,6 @@ function showBack(event)
     }
 }
 
-//
-// Function: showFront(event)
-// Called when the done button is clicked from the back of the widget
-//
-// event: onClick event from the done button
-//
 function showFront(event)
 {
     startTimer(50);
@@ -247,5 +225,4 @@ if (window.widget) {
     widget.onhide = hide;
     widget.onshow = show;
     widget.onsync = sync;
-    //document.getElementById("logo").onclick = onLogoClicked;
 }
