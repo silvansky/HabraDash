@@ -7,11 +7,11 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleDisplayName</key>
-	<string>Untitled</string>
+	<string>HabraDash</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.silvansky.widget.HabraDash</string>
 	<key>CFBundleName</key>
-	<string>Untitled</string>
+	<string>HabraDash</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
