@@ -6,7 +6,7 @@
  */
 var dashcodePartSpecs = {
     "done": { "creationFunction": "CreateGlassButton", "onclick": "showFront", "text": "Done" },
-    "info": { "backgroundStyle": "black", "creationFunction": "CreateInfoButton", "foregroundStyle": "white", "frontID": "front", "onclick": "showBack" },
+    "info": { "backgroundStyle": "black", "creationFunction": "CreateInfoButton", "foregroundStyle": "black", "frontID": "front", "onclick": "showBack" },
     "karma": { "text": "0", "view": "DC.Text" },
     "karmaCaption": { "text": "Karma:", "view": "DC.Text" },
     "logo": { "view": "DC.ImageLayout" },
@@ -17,5 +17,6 @@ var dashcodePartSpecs = {
     "ratingCaption": { "text": "Rating:", "view": "DC.Text" },
     "userName": { "text": "<none>", "view": "DC.Text" }
 };
+
 
 

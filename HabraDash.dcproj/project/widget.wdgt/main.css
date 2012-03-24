@@ -56,7 +56,7 @@ body {
     font-size: 10pt;
     left: 32px;
     top: 69px;
-    width: 159px;
+    width: 185px;
 }
 
 #nameEditCaption {
@@ -84,12 +84,12 @@ body {
     overflow: hidden;
     position: absolute;
     margin-top: 0px;
-    color: rgb(102, 204, 102);
-    top: 38px;
-    left: 56px;
+    font-size: 10px;
+    color: rgb(102, 102, 102);
+    top: 40px;
+    left: 59px;
     width: auto;
     height: auto;
-    font-size: 10px;
 }
 
 .selected #karmaCaption {
@@ -102,10 +102,10 @@ body {
     overflow: hidden;
     position: absolute;
     margin-top: 0px;
-    color: rgb(204, 102, 204);
-    top: 38px;
     font-size: 10px;
-    left: 211px;
+    color: rgb(102, 102, 102);
+    top: 40px;
+    left: 214px;
     width: auto;
     height: auto;
 }
@@ -122,8 +122,8 @@ body {
     position: absolute;
     margin-top: 0px;
     color: rgb(102, 102, 102);
-    top: 103px;
-    left: 24px;
+    top: 100px;
+    left: 194px;
     width: auto;
     height: auto;
 }
@@ -140,8 +140,8 @@ body {
     position: absolute;
     margin-top: 0px;
     color: rgb(102, 102, 102);
-    top: 103px;
-    left: 89px;
+    top: 100px;
+    left: 259px;
     width: auto;
     height: auto;
 }
@@ -159,9 +159,9 @@ body {
     font-family: 'Lucida Grande';
     font-size: 36px;
     text-align: center;
-    left: 138px;
     top: 55px;
-    right: 19px;
+    left: 141px;
+    right: 16px;
     width: auto;
     height: auto;
 }
@@ -181,7 +181,7 @@ body {
     font-size: 36px;
     text-align: center;
     left: 12px;
-    right: 200px;
+    right: 196px;
     width: auto;
     height: auto;
 }
@@ -197,12 +197,12 @@ body {
     margin-top: 0px;
     text-shadow: none;
     white-space: nowrap;
-    font-size: 16px;
     font-weight: bold;
     font-family: 'Lucida Grande';
     left: 27px;
     text-align: center;
-    top: 18px;
+    font-size: 20px;
+    top: 17px;
     right: 26px;
     width: auto;
     height: auto;
@@ -224,8 +224,10 @@ body {
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     opacity: 1;
+    border-color: rgb(255, 0, 0);
+    border-width: 1px !important;
     top: 13px;
-    left: 215px;
+    left: 239px;
 }
 
 #inner_image {
