@@ -19,13 +19,15 @@
 		</array>
 	</dict>
 	<key>ContentViewType</key>
-	<integer>2</integer>
+	<integer>5</integer>
 	<key>DeploymentOptions</key>
 	<dict>
 		<key>Destination</key>
 		<string>localhost.default</string>
 		<key>Path</key>
 		<string>HabraDash</string>
+		<key>SavePath</key>
+		<string>/Users/Valentine/Projects/HabraDash</string>
 		<key>enableSimulation</key>
 		<true/>
 		<key>simulatedHost</key>
@@ -78,7 +80,7 @@
 		<key>Objects view last selections</key>
 		<array>
 			<array>
-				<integer>2</integer>
+				<integer>5</integer>
 			</array>
 		</array>
 		<key>Visible StackLayout Views</key>
