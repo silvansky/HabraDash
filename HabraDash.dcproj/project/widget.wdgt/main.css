@@ -122,11 +122,11 @@ body {
     position: absolute;
     margin-top: 0px;
     color: rgb(102, 102, 102);
-    left: 194px;
     top: 98px;
+    font-size: 10px;
+    left: 198px;
     width: auto;
     height: auto;
-    font-size: 10px;
 }
 
 .selected #positionCaption {
@@ -142,7 +142,7 @@ body {
     color: rgb(102, 102, 102);
     top: 98px;
     font-size: 10px;
-    left: 249px;
+    left: 253px;
     width: auto;
     height: auto;
 }
@@ -227,8 +227,8 @@ body {
     opacity: 1;
     border-color: rgb(255, 0, 0);
     border-width: 1px !important;
-    top: 13px;
     left: 239px;
+    top: 12px;
 }
 
 #inner_image {
